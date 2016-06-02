@@ -473,7 +473,7 @@ static int f2fs_drop_inode(struct inode *inode)
 			i_size_write(inode, 0);
 
 			if (F2FS_HAS_BLOCKS(inode))
-				f2fs_truncate(inode, true);
+				f2fs_truncate(inode);
 
 #ifdef CONFIG_F2FS_FS_ENCRYPTION
 			if (F2FS_I(inode)->i_crypt_info)
