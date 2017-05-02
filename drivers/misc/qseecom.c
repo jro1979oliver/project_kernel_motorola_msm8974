@@ -46,6 +46,8 @@
 #include "qseecom_legacy.h"
 #include "qseecom_kernel.h"
 
+#define U32_MAX		((u32)~0U)
+
 #define QSEECOM_DEV			"qseecom"
 #define QSEOS_VERSION_14		0x14
 #define QSEEE_VERSION_00		0x400000
